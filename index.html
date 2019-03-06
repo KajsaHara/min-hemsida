@@ -12,7 +12,22 @@
           <input placeholder="Skriv något"></input>
         </div>
         <button class="addOption">Lägg till</button>
+        <div class="resultSection"></div>
       </div>
       <button>Go!</button>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script>
+        $(function() {
+          $('.resultSection').hide()
+
+          var add_option = function() {
+            $('.inputs').append('<input></input>')
+          }
+
+          $('.addOption').click(add_option)
+
+        })
+      </script>
   </body>
 </html>
